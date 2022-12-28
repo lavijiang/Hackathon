@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>用户登录</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+  </script>
+</head>
+<body>
+<div style="color:red;font-size:24px;">你好 Django!</div>
+<div class="input-group mb-3">
+    <input type="text" id="username" name="username" placeholder="用户名">
+</div>
+<div class="col-4">
+    <input id="register" type="button" class="btn btn-success" value="登录">
+</div>
+<div class="col-8">
+    <label for="agreeTerms" id="info">
+    </label>
+</div>
+<script>
+    $("#register").click(function () {
+        $.ajax({
+            url: "/regist/", //后端请求地址
+            type: "POST", //请求方式
+            data: {//请求参数
+                username: $("#username").val()
+            },
+            //请求成功后操作
+            success: function (data) {
+              $("#info").html(data.msg)
+            },
+            //请求失败后操作
+            error: function (jqXHR, textStatus, err) {
+                console.log(arguments);
+            },
+        })
+    })
+</script>
+</body>
+</html>
