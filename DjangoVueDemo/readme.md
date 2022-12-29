@@ -1,10 +1,10 @@
 # 1 demo components
 - backend: Django + DRF
 - frontend: Vue.js
-- DB: MySQL
-- cache: Redis
+- DB: MySQL `TODO`
+- cache: Redis `TODO`
 
-# 2 backend
+# 2 backend mysite
 ## 2.1 [install django](https://www.djangoproject.com/)
 pip3 install django
 
@@ -14,14 +14,18 @@ python -m django startproject mysite
 ## 2.3 create django app
 python3 manage.py startapp app1
 
-## 2.4 alter mysite/settings.py
+## 2.4 run server
+python3 manage.py runserver 8008
 
-## 2.5 add views/urls
+## 2.5 alter mysite/settings.py
+add app1  
+add corsheaders
 
-## 2.6 run server
-python3 manage.py runserver
+## 2.6 add views/urls
+app1/views  
+mysite/urls
 
-# 3 frontend
+# 3 frontend mysitevue
 ## 3.1 [install vue-cli](https://cli.vuejs.org/guide/installation.html)
 npm install -g @vue/cli
 
@@ -36,3 +40,20 @@ vue init webpack mysitevue
 
 ## 3.5 install vue router
 npm i -save vue-router
+
+## 3.6 run service
+npm run dev
+
+## 3.7 wrap service
+npm run build
+
+## 3.8 add router
+testrein
+
+# QA
+## 1 check nvm installed versions
+nvm list
+## 2 switch nvm default version
+nvm alias default 16.15.1
+## 3 nvm uninstall specific version nodejs
+nvm uninstall 16.15.1
