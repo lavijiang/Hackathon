@@ -1,10 +1,13 @@
-# 1 demo components
-- backend: Django + DRF
-- frontend: Vue.js
+# 1 Demo Components
+- Backend: Django + DRF
+- Frontend: Vue.js
 - DB: MySQL `TODO`
-- cache: Redis `TODO`
+- Cache: Redis `TODO`
+- Web Server: uwsgi
+- Process Control: supervisor
+- Load Balancer, Web Server, & Reverse Proxy: nginx 
 
-# 2 backend mysite
+# 2 Backend mysite
 ## 2.1 [install django](https://www.djangoproject.com/)
 pip3 install django
 
@@ -25,7 +28,7 @@ add corsheaders
 app1/views  
 mysite/urls
 
-# 3 frontend mysitevue
+# 3 Frontend mysitevue
 ## 3.1 [install vue-cli](https://cli.vuejs.org/guide/installation.html)
 npm install -g @vue/cli
 

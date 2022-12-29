@@ -18,7 +18,7 @@ export default {
     doLogin () {
       this.$axios.request(
         {
-          url: 'http://127.0.0.1:8008/regist/',
+          url: 'http://127.0.0.1:8033/regist/',
           method: 'POST',
           data: {
             'username': this.username
