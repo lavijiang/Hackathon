@@ -6,6 +6,7 @@
 - Web Server: uwsgi
 - Process Control: supervisor
 - Load Balancer, Web Server, & Reverse Proxy: nginx 
+- Monitor: Prometheus Grafana
 
 # 2 Backend mysite
 ## 2.1 [install django](https://www.djangoproject.com/)
@@ -52,6 +53,10 @@ npm run build
 
 ## 3.8 add router
 testrein
+
+# 4 Monitor: Prometheus Grafana
+## 4.1 [Prometheus](https://prometheus.io/)
+## 4.2 [Grafana](https://grafana.com/)
 
 # QA
 ## 1 check nvm installed versions
