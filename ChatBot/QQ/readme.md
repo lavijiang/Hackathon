@@ -15,6 +15,9 @@ account: # 账号相关
     secret: ''                # 密钥
 ```
 
+### 1.3 linux服务器无法验证登录
+有个tricky的方法，可以先在windows上登录，然后把session.token和device.json拷贝过来
+
 ## 2 启动命令
 nohup python3 main.py script.py >/dev/null 2>&1 &  
 nohup ./go-cqhttp >/dev/null 2>&1 &
