@@ -65,3 +65,26 @@ sudo supervisorctl reload #重载配置并启动
 
 
 ### 使用Nginx进行代理
+#### 1. install nginx
+```
+sudo apt-get install nginx
+```
+
+#### 2. start it 
+```
+sudo systemctl start nginx 
+sudo systemctl restart nginx //restart
+```
+
+#### 3. check the status of Nginx
+```
+sudo systemctl status nginx
+```
+
+#### 4. conf file
+```
+/etc/nginx/nginx.conf
+```
+
+#### 5. high available
+使用Keepalived软件来配置高可用Nginx集群
